@@ -1,0 +1,58 @@
+.section {
+    height: 76vh;
+    width: 100%;
+    max-width: 1420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weatherList {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: stretch;
+    justify-content: start;
+    height: 62vh;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.emptyList {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0f5190;
+}
+
+    @media (max-width: 1400px) {
+        .section {
+            max-width: 1400px;
+        }
+        .weatherList {
+            justify-content: space-evenly;
+            gap: 4rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .section {
+            max-width: 768px;
+        }
+        .weatherList {
+            gap: 1.5rem;
+            justify-content: space-evenly;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .section {
+            max-width: 480px;
+        }
+        .weatherList {
+            gap: 1rem;
+            justify-content: start;
+        }
+    }
