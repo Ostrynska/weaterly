@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <div className={styles.content}>
         <p className={styles.text}>Made for Come Back Agency</p>
         <a 
-              href="https://github.com/Ostrynska/weatherly-app" 
+              href="https://github.com/Ostrynska/weatherly" 
               target="_blank" 
               rel="noopener noreferrer" 
               className={styles.link}
