@@ -84,12 +84,12 @@ const HourlyForecast: React.FC<HourlyForecastProps> = ({ hourlyData }) => {
         const y = scales.y.getPixelForValue(value);
 
         const text = `${Math.round(value)}°`;
-        ctx.font = 'bold 14px Arial';
+        ctx.font = 'bold 16px Arial';
         ctx.fillStyle = '#FFF';
         ctx.textAlign = 'center';
 
         ctx.fillStyle = '#FFF';
-        ctx.fillText(text, x, y - 15);
+        ctx.fillText(text, x, y - 8);
       });
 
       ctx.restore();
