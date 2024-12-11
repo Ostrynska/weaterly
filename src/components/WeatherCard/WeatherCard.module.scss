@@ -1,0 +1,165 @@
+.card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 320px;
+    max-height: 320px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(17, 12, 46, 0.016) 0px 48px 100px 0px;
+    box-sizing: border-box;
+    transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+    &:hover, &:focus {
+        box-shadow: rgba(0, 0, 0, 0.092) 0px 54px 55px,
+        rgba(0, 0, 0, 0.046) 0px -12px 30px,
+        rgba(0, 0, 0, 0.033) 0px 4px 6px,
+        rgba(0, 0, 0, 0.076) 0px 12px 13px,
+        rgba(0, 0, 0, 0.045) 0px -3px 5px;
+    }
+}
+
+.card:hover .deleteButton,
+.card:focus-within .deleteButton {
+    display: block;
+    opacity: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cityInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconWithName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.weatherIcon {
+    width: 40px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.cityInfo h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.cityInfo p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.iconButton {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+
+.iconButtonReload {
+    width: 18px;
+    height: 18px;
+    color: #fff;
+}
+
+.content {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.temperature {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    font-size: 80px;
+    line-height: 1;
+}
+
+.tempValue {
+    line-height: 1;
+}
+
+.degree {
+    font-size: 18px;
+    margin-top: 10px;
+    vertical-align: top;
+    font-weight: 300;
+}
+
+.description {
+    font-size: 18px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: capitalize;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.iconDetail {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.deleteButton {
+    position: absolute;
+    top: 86px;
+    right: 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.iconButtonDelete {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+}
