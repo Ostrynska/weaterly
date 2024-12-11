@@ -1,0 +1,126 @@
+.forecastContainer {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.iconTitle {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.title {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.graphContainer {
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+.forecastItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.forecastItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 12%;
+    margin-bottom: 10px;
+}
+
+.temperature {
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.windSpeed {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.time {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .forecastItems {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .forecastItem {
+        width: 23%;
+    }
+
+    .temperature {
+        font-size: 0.9rem;
+        top: -15px;
+    }
+
+    .icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .windSpeed {
+        font-size: 0.7rem;
+    }
+
+    .time {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .forecastItems {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .forecastItem {
+        width: 30%;
+    }
+
+    .temperature {
+        font-size: 0.8rem;
+        top: -10px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .windSpeed {
+        font-size: 0.6rem;
+    }
+
+    .time {
+        font-size: 0.6rem;
+    }
+}
