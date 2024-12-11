@@ -58,7 +58,7 @@ Develop a **Single Page Application (SPA)** to display weather information for s
 ---
 
 ### Repository:
-Find the full project and implementation details in the [GitHub Repository](https://github.com/Ostrynska/weatherly-app).
+Find the full project and implementation details in the [GitHub Repository](https://github.com/Ostrynska/weatherly).
 
 ---
 
