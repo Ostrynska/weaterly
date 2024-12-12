@@ -59,6 +59,7 @@
     font-size: 0.8rem;
     color: #777;
     margin-bottom: 5px;
+    display: block;
 }
 
 .time {
@@ -71,6 +72,7 @@
     .forecastItems {
         justify-content: center;
         gap: 15px;
+        flex-wrap: nowrap;
     }
 
     .forecastItem {
@@ -88,7 +90,7 @@
     }
 
     .windSpeed {
-        font-size: 0.7rem;
+        display: none;
     }
 
     .time {
@@ -100,6 +102,7 @@
     .forecastItems {
         justify-content: center;
         gap: 10px;
+        flex-wrap: nowrap;
     }
 
     .forecastItem {
@@ -117,7 +120,7 @@
     }
 
     .windSpeed {
-        font-size: 0.6rem;
+        display: none;
     }
 
     .time {
