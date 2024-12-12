@@ -43,7 +43,7 @@
         }
         .weatherList {
             gap: 1.5rem;
-            justify-content: space-evenly;
+            justify-content: flex-start;
         }
     }
 
@@ -53,6 +53,6 @@
         }
         .weatherList {
             gap: 1rem;
-            justify-content: start;
+            justify-content: center;
         }
     }
