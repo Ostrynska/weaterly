@@ -4,7 +4,7 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
     max-width: 300px;
     max-height: 320px;
@@ -166,14 +166,12 @@
 
 @media (max-width: 480px) {
     .card {
-        padding: 20px;
         max-width: 320px;
     }
 }
 
 @media (max-width: 768px) {
     .card {
-        padding: 20px;
         max-width: 320px;
     }
 }
