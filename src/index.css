@@ -1,5 +1,13 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
 html {
   scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,7 +22,6 @@ body {
   height: 100vh;
   color: #000;
   font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
 }
 
 #root {
