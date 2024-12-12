@@ -23,3 +23,15 @@
     margin-right: 5px;
     color: #333;
 }
+
+@media (max-width: 768px) {
+    .conditions {
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 480px) {
+    .conditions {
+        max-width: 320px;
+    }
+}
